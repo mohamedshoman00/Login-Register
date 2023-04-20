@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Login & Register CSS */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.05)
+}
+
+.form-card {
+  width: 400px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 25px 1px;
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  border-radius: 55px;
+  background-color: #f0f0f0;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+.input-field label {
+  padding: 0.37rem 10px 0 15px;
+  color: #acacac;
+  font-size: 1.5rem;
+}
+
+.input-field input {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+  border: none !important;
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding-right: 0 !important;
+  margin-right: 10px;
+}
+
+.input-field input:placeholder-shown {
+  color: #aaa;
+  font-weight: 500;
+}
+
+/*  */
+
+.login-container {
+  position: "relative";
+  min-height: "100vh";
+  overflow: "hidden";
+  /* background-color: "#fff"; */
+}
+
+.panels-container {
+  position: absolute;
+  top: -10%;
+  right: 48%;
+  height: 2000px;
+  width: 2000px;
+  background-image: linear-gradient(-45deg, #0dcaf0 0%, #0dcaf0 100%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.btn-style {
+  width: 150px;
+  height: 49px;
+  border-radius: 48px;
+  font-weight: 600;
+  transition: all 0.5s;
+  text-transform: capitalize;
+
+}
+
+@media (max-width: 991px) {
+
+  .small-hidden {
+    display: none;
+  }
+
+  .login-small-window {
+    width: 100% !important;
+    flex-direction: column;
+
+  }
+
+  .small-text {
+    display: block !important;
+  }
+
+  .form-card {
+    width: 370px;
+  }
+}
